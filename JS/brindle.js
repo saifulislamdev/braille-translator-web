@@ -5,27 +5,7 @@ function myFunction() {
 
 	while(counter < inputText.length){
         switch (inputText[counter]) {
-            // Spaces
-            case ' ':
-                outputText = outputText.concat(" ");
-                break;
-            case '\t':
-                outputText = outputText.concat("\t");
-                break;
-            case '\n':
-                outputText = outputText.concat("\n"); 
-                break;
-            case '\v':
-                outputText = outputText.concat("\v");
-                break;
-            case '\f':
-                outputText = outputText.concat("\f");
-                break;
-            case '\r':
-                outputText = outputText.concat("\r");
-                break;
-
-                // Letters
+            // Letters
             case 'a':
             case 'A': {
                 outputText = outputText.concat("⠁");
@@ -190,20 +170,74 @@ function myFunction() {
                 break;
 
             // Symbols
+            case "'":
+                outputText = outputText.concat("⠄");
+                break;
+            case "‘":
+                outputText = outputText.concat("⠄⠦");
+                break;
+            case "’":
+                outputText = outputText.concat("⠄⠴");
+                break;
             case '.':
                 outputText = outputText.concat("⠲");
                 break;
             case '-':
-                outputText = outputText.concat("⠤");
+                outputText = outputText.concat("⠐⠤");
                 break;
+            case '–':
+                outputText = outputText.concat("⠠⠤");
+                break;
+            case '—':
+                outputText = outputText.concat("⠐⠠⠤");
+                break;
+            case '=':
+                outputText = outputText.concat("⠐⠶");
+                break;
+            case '+':
+                outputText = outputText.concat("⠐⠖");
+                break;   
+            case '×':
+                outputText = outputText.concat("⠐⠐⠦");
+                break;
+            case '÷':
+                outputText = outputText.concat("⠐⠌");
+                break;                
             case ';':
                 outputText = outputText.concat("⠆");
+                break;
+            case ':':
+                outputText = outputText.concat("⠒");
                 break;
             case '\"':
                 outputText = outputText.concat("⠄⠶");
                 break;
+            case '“':
+                outputText = outputText.concat("⠘⠦");
+                break;
+            case '”':
+                outputText = outputText.concat("⠘⠴");
+                break;
+            case ',':
+                outputText = outputText.concat("⠂");
+                break;
+            case '?':
+                outputText = outputText.concat("⠦");
+                break;
             case '!':
                 outputText = outputText.concat("⠖");
+                break;
+            case '@':
+                outputText = outputText.concat("⠈⠁");
+                break;
+            case '#':
+                outputText = outputText.concat("⠼");
+                break;
+            case '&':
+                outputText = outputText.concat("⠈⠯");
+                break;
+            case '*':
+                outputText = outputText.concat("⠔");
                 break;
             case '(':
                 outputText = outputText.concat("⠐⠣");
@@ -211,21 +245,24 @@ function myFunction() {
             case ')':
                 outputText = outputText.concat("⠐⠜");
                 break;
-            case ',':
-                outputText = outputText.concat("⠂");
+            case '©':
+                outputText = outputText.concat("⠘⠉");
                 break;
-            case '@':
-                outputText = outputText.concat("⠜");
+            case '®':
+                outputText = outputText.concat("⠘⠗");
                 break;
-            case '*':
-                outputText = outputText.concat("⠔");
+            case '™':
+                outputText = outputText.concat("⠘⠞");
                 break;
-            case '?':
-                outputText = outputText.concat("⠦");
+            case '°':
+                outputText = outputText.concat("⠘⠚");
+                break;
+            case '%':
+                outputText = outputText.concat("⠨⠴");
                 break;
             default:
-                outputText = outputText.concat("This character is not yet registered on the system");
-            
+                outputText = outputText.concat(inputText[counter]);
+                break;
         }       
         counter++;
      }
