@@ -1,0 +1,32 @@
+* {
+    text-align: center;
+}
+
+.braille {
+    font-size: 50px;
+}
+
+.button {
+    border: 0.1px solid black;
+    height: 20px;
+    margin: auto;
+    margin-bottom: 7.5%;
+    text-align: center;
+    width: 10%;
+}
+
+.button:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.heading {
+    font-size: 40px;
+    margin-bottom: 5%;
+}
+
+.logo {
+    height: 150px ; 
+    margin-top: 20px;
+    width: 150px;
+}

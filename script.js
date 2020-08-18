@@ -1,3 +1,10 @@
+window.onload = main;
+
+function main() {
+    var button = document.getElementById('button');
+    button.onclick = myFunction;
+}
+
 function myFunction() {
     var inputText = document.getElementById("input").value; 
     var outputText = "";
