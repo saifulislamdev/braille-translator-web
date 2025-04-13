@@ -1,6 +1,6 @@
-# BrailleTranslator2
+# Braille Translator Web
 
-Live at: https://saifulislamdev.github.io/BrailleTranslator2/
+Live at: https://saifulislamdev.github.io/braille-translator-web/
 
 Collaborators: 
 Justin Siu (justinsiu1@gmail.com) 
